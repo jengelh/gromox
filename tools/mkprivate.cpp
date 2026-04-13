@@ -144,6 +144,11 @@ static int mk_folders(sqlite3 *psqlite, uint32_t user_id)
 		{PRIVATE_FID_CONTACTS, PRIVATE_FID_QUICKCONTACTS, "IPF.Contact.MOC.QuickContacts", true},
 		{PRIVATE_FID_CONTACTS, PRIVATE_FID_IMCONTACTLIST, "IPF.Contact.MOC.ImContactList", true},
 		{PRIVATE_FID_CONTACTS, PRIVATE_FID_GALCONTACTS, "IPF.Contact.GalContacts", true},
+		{PRIVATE_FID_CONTACTS, PRIVATE_FID_RECIPIENT_CACHE, "IPF.Contact.RecipientCache", true},
+		// Anecdotal folders found in Exchange:
+		//{PRIVATE_FID_CONTACTS, -, "IPF.Contact.Company", true},
+		//{PRIVATE_FID_CONTACTS, -, "IPF.Contact.OrganizationalContacts", true},
+		//{PRIVATE_FID_CONTACTS, -, "IPF.Contact.PeopleCentricConversationBuddies", true},
 		{PRIVATE_FID_IPMSUBTREE, PRIVATE_FID_JUNK, "IPF.Note"},
 		{PRIVATE_FID_IPMSUBTREE, PRIVATE_FID_CONVERSATION_ACTION_SETTINGS, "IPF.Configuration", true},
 		{PRIVATE_FID_ROOT, PRIVATE_FID_DEFERRED_ACTION},
